@@ -1,7 +1,7 @@
 import { getRandomImageFilename } from '../../utils/getRandomImageFilename';
 
-export default defineEventHandler((event) => {
+export default defineEventHandler((event) => {	
 	return {
-		url: `${useRuntimeConfig().url}/temp-images/${getRandomImageFilename()}`
+		url: `${process.env.URL}/temp-images/${getRandomImageFilename()}`
 	};
 })
