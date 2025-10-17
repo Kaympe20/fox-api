@@ -20,8 +20,8 @@ try {
 </script>
 
 <template>
-    <p>Want to use this API in your own site?</p>
-    
+    <p>Want to use this API in your own site? Check out the docs <nuxt-link to="/docs">here</nuxt-link>.</p>
+
     <div>
         <p v-if="loading">Loading...</p>
         <img v-if=!loading :src />
